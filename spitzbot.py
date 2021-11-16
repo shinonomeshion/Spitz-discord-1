@@ -58,7 +58,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content.startswith('#spitz:'):
-                kasi = message.content.replace('#spitz:', '')
+        kasi = message.content.replace('#spitz:', '')
         with open(kasi) as kasii:
             kasiyaru = kasii.read()
         embed = discord.Embed()
